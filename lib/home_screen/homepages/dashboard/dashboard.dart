@@ -8,6 +8,7 @@ import 'package:nutrilens_test/cores/constants/text_styles.dart';
 // import 'package:nutrilens_test/home_screen/homepages/dashboard/intake_select.dart' hide IntakeRound;
 
 import '../../../cores/custom_datatypes/custom_classes.dart';
+import 'intake_select.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -834,12 +835,12 @@ class _DashboardState extends State<Dashboard> {
                     SizedBox(width: screenWidth - 310),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => IntakeSelect(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => IntakeSelect(),
+                          ),
+                        );
                       },
                       child: Container(
                         height: 40,
